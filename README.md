@@ -4,7 +4,7 @@ Here I used an ansible playbook to build a flask web_application on docker conta
 
 The image build will only happen when a change is occured in the repository no matter how many times you manually run the playbook.
 
-#### By using Jenkins we can create a CD pipeline. We should create a jobs to execute the playbook. The sourcecode of the job should be set as the github repo (https://github.com/syamjithr/jdocker.git). In build area give the playbook play.yml and set the build_trigger (Github hook tigger for GITScm polling). Also setup the webhook with the jenkins server on the github repository.
+#### By using Jenkins we can create a CD pipeline. We should create a job to execute the playbook. The sourcecode of the job should be set as the github repo (https://github.com/syamjithr/jdocker.git). In build area give the playbook play.yaml and set the build_trigger (Github hook tigger for GITScm polling). Also setup the webhook using the jenkins server ip on the github repository.
 play.yaml
 ```
 ---
